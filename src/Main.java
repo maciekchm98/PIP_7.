@@ -21,15 +21,17 @@ public class Main {
             System.out.println("Imię Studenta: " + secretStudent.getName());
             System.out.println("Nazwisko Studenta: " + secretStudent.getSurname());
             System.out.println("Numer Studenta: " + secretStudent.getStudentNumber());
-            System.out.println("Podaj nowe imię i nazwisko sekretnego studenta:");
+            System.out.println("Podaj nowe imię sekretnego studenta:");
+            String name2 = scanner.nextLine();
             secretStudent.setName(scanner.nextLine());
-            System.out.println("Nowe imię: " + secretStudent.getName());
-            System.out.println("Nowe nazwisko: " + secretStudent.getSurname());
-            System.out.println("Nowy numer: " + secretStudent.getStudentNumber());
+            System.out.println("Nowe imię: " + secretStudent.setName());
+            System.out.println("nazwisko: " + secretStudent.getSurname());
+            System.out.println("numer: " + secretStudent.getStudentNumber());
 
         } else {
-            System.out.println("Student name: " + name);
-            System.out.println("Student number: " + studentNumber);
+            System.out.println("imię studenta: " + name);
+            System.out.println("nazwisko studenta: " + surname);
+            System.out.println("numer studenta: " + studentNumber);
         }
     }
 }
