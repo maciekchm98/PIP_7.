@@ -9,9 +9,10 @@ public class SecretStudent {
         this.studentNumber = studentNumber;
     }
 
-    public void setName(String name) {
+    public void setName(String name2) {
+        this.name=name2;
         if(!name.isEmpty()) {
-            this.name = name;
+            this.name = name2;
         }
     }
 
@@ -26,4 +27,7 @@ public class SecretStudent {
     public int getStudentNumber() {
         return studentNumber;
     }
+
+    public String setName() {
+        return name;}
 }
